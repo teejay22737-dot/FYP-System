@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="supervisor-dashboard.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+    <title>Supervisor Dashboard | FYP System</title>
+</head>
+<body>
+    <!--------Header--------->
+    <header>
+        <div>
+            <div class="logo">F</div>
+            <p class="logo-desc">FYP System</p>
+        </div>
+
+        <div>
+            <div class="role">Supervisor</div>
+            <p class="username">Dr. Okafor</p>
+        </div>
+
+        <button class="menu-btn" aria-label="Open menu">☰</button>
+    </header>
+
+    <div class="layout">
+        <aside class="sidebar">
+            <!------Side bar links------>
+            <nav>
+                <a href="supervisor-dashboard.html">Dashboard</a>
+                <a href="supervisor-students.html">My Students</a>
+                <a href="supervisor-topics.html">Topic Requests</a>
+                <a href="supervisor-submissions.html">Submissions</a>
+                <a href="supervisor-grading.html">Grading</a>
+                <a href="supervisor-profile.html">Profile</a>
+            </nav>
+
+            <a href="#" class="logout">Logout</a>
+        </aside>
+
+        <!-----Main Dashboard----->
+        <main>
+            <h1>Dashboard</h1>
+            
+            <!------Project stats------->
+            <div class="stats-container">
+                <div class="stats">
+                    <p class="stats-header">Assigned students</p>
+                    <p class="label-value">8</p>
+                </div>
+
+                <div class="stats">
+                    <p class="stats-header">Pending topics</p>
+                    <p class="label-value pending">3</p>
+                </div>
+
+                <div class="stats">
+                    <p class="stats-header">To review</p>
+                    <p class="label-value review">5</p>
+                </div>
+
+                <div class="stats">
+                    <p class="stats-header">Average progress</p>
+                    <p class="label-value">54%</p>
+                </div>
+            </div>
+
+            <!-------Topic requests stats------->
+            <section class="card">
+                <h2>Topic requests</h2>
+
+                <div class="table-wrap">
+                    <table>
+                        <tr>
+                            <th>Student</th>
+                            <th>Proposed topic</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+
+                        <tr>
+                            <td>Chioma Obi</td>
+                            <td>Blockchain Voting System</td>
+                            <td><span class="badge pending">Pending</span></td>
+                            <td>
+                                <button class="btn btn-primary" data-action="approve">Approve</button>
+                                <button class="btn btn-outline" data-action="reject">Reject</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>David Eze</td>
+                            <td>Smart Campus Navigation</td>
+                            <td><span class="badge pending">Pending</span></td>
+                            <td>
+                                <button class="btn btn-primary" data-action="approve">Approve</button>
+                                <button class="btn btn-outline" data-action="reject">Reject</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Tunde Ade</td>
+                            <td>Hospital Queue Management</td>
+                            <td><span class="badge approved">Approved</span></td>
+                            <td>
+                                <button class="btn btn-approved">View</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+            <!-----------Progress code----------->
+            <section class="card-row">
+                <section class="card">
+                    <h2>Student progress</h2>
+
+                    <div class="progress-wrap">
+                        <div class="progress-item">
+                            <div class="progress-info">
+                                <span>Amina Yusuf</span>
+                                <span>62%</span>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill" style="width: 62%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress-item">
+                            <div class="progress-info">
+                                <span>David Eze</span>
+                                <span>40%</span>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill" style="width: 40%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress-item">
+                            <div class="progress-info">
+                                <span>Chioma Obi</span>
+                                <span>10%</span>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill" style="width: 10%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress-item">
+                            <div class="progress-info">
+                                <span>Chioma Obi</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill" style="width: 70%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress-item">
+                            <div class="progress-info">
+                                <span>Chioma Obi</span>
+                                <span>45%</span>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill" style="width: 45%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress-item">
+                            <div class="progress-info">
+                                <span>Chioma Obi</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill" style="width: 80%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress-item">
+                            <div class="progress-info">
+                                <span>Chioma Obi</span>
+                                <span>40%</span>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill" style="width: 40%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress-item">
+                            <div class="progress-info">
+                                <span>Chioma Obi</span>
+                                <span>10%</span>
+                            </div>
+                            <div class="bar">
+                                <div class="bar-fill" style="width: 10%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!----------Review code----------->
+                <section class="card">
+                    <h2>Awaiting review</h2>
+
+                    <div class="table-wrap review-table">
+                        <table>
+                            <tr>
+                                <th>File</th>
+                                <th>From</th>
+                                <th></th>
+                            </tr>
+
+                            <tr>
+                                <td>Chapter2_Draft.docx</td>
+                                <td>Amina Yusuf</td>
+                                <td><button class="btn view-file">View</button></td>
+                            </tr>
+
+                            <tr>
+                                <td>Lit_Review_v1.docx</td>
+                                <td>David Eze</td>
+                                <td><button class="btn view-file">View</button></td>
+                            </tr>
+
+                            <tr>
+                                <td>Lit_Review_v1.docx</td>
+                                <td>David Eze</td>
+                                <td><button class="btn view-file">View</button></td>
+                            </tr>
+
+                            <tr>
+                                <td>Lit_Review_v1.docx</td>
+                                <td>David Eze</td>
+                                <td><button class="btn view-file">View</button></td>
+                            </tr>
+
+                            <tr>
+                                <td>Lit_Review_v1.docx</td>
+                                <td>David Eze</td>
+                                <td><button class="btn view-file">View</button></td>
+                            </tr>
+
+                            <tr>
+                                <td>Lit_Review_v1.docx</td>
+                                <td>David Eze</td>
+                                <td><button class="btn view-file">View</button></td>
+                            </tr>
+
+                            <tr>
+                                <td>Lit_Review_v1.docx</td>
+                                <td>David Eze</td>
+                                <td><button class="btn view-file">View</button></td>
+                            </tr>
+                        </table>
+                    </div>
+                </section>
+            </section>
+        </main>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

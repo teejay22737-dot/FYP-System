@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/signup.css">
+    <title>Sign up</title>
+</head>
+<body>
+    <form>
+        <h2>Create your account</h2>
+
+        <div class="field">
+            <label for="name">Full name:</label><br>
+            <input type="text" id="name" name="full_name" required>
+        </div>
+
+        <div class="field">
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="@funaab.edu.ng" required>
+        </div>
+
+        <div class="field">
+            <label for="id_number">Matric / Staff number:</label><br>
+            <input type="number" id="id_number" name="id_number" required>
+        </div>
+
+        <div class="field">
+            <label for="role">I am a / an</label><br>
+            <select id="role" name="role" required>
+                <option value="">Select role</option>
+                <option value="student">Student</option>
+                <option value="supervisor">Supervisor</option>
+                <option value="admin">Admin</option>
+            </select>
+        </div>
+
+        <div class="field">
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required>
+        </div>
+
+        <div class="field">
+            <label for="con_password">Confirm password:</label><br>
+            <input type="password" id="con_password" name="con_password" required>
+        </div>
+
+        <button type="submit" class="signup_btn">Sign up</button>
+
+        <p>Already have an account? <a href="signin.html">Sign in</a></p>
+    </form>
+</body>
+</html>

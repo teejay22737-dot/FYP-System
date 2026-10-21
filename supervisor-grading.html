@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="supervisor-dashboard.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+    <title>Grading | Supervisor | FYP System</title>
+</head>
+<body>
+    <header>
+        <button class="menu-btn" aria-label="Open menu">&#9776;</button>
+        <div>
+            <div class="logo">F</div>
+            <p class="logo-desc">FYP System</p>
+        </div>
+        <div>
+            <div class="role">Supervisor</div>
+            <p class="username">Dr. Okafor</p>
+        </div>
+    </header>
+
+    <div class="layout">
+        <aside class="sidebar">
+            <nav>
+                <a href="supervisor-dashboard.html">Dashboard</a>
+                <a href="supervisor-students.html">My Students</a>
+                <a href="supervisor-topics.html">Topic Requests</a>
+                <a href="supervisor-submissions.html">Submissions</a>
+                <a href="supervisor-grading.html">Grading</a>
+                <a href="supervisor-profile.html">Profile</a>
+            </nav>
+            <a href="login.html" class="logout">Logout</a>
+        </aside>
+
+        <main>
+            <h1>Grading</h1>
+            <section class="card">
+                <div class="table-wrap ">
+                    <table>
+                        <thead><tr><th>Student</th><th>Submission</th><th>Score (/100)</th><th>Comment</th><th></th></tr></thead>
+                        <tbody><tr><td>Amina Yusuf</td><td>Chapter 1</td><td><input class="grade-input" type="number" min="0" max="100" aria-label="Score"></td><td><input class="comment-input" type="text" placeholder="Comment" aria-label="Comment"></td><td><button class="btn btn-primary">Save</button></td></tr><tr><td>Amina Yusuf</td><td>Chapter 2</td><td><input class="grade-input" type="number" min="0" max="100" aria-label="Score"></td><td><input class="comment-input" type="text" placeholder="Comment" aria-label="Comment"></td><td><button class="btn btn-primary">Save</button></td></tr><tr><td>David Eze</td><td>Chapter 2</td><td><input class="grade-input" type="number" min="0" max="100" aria-label="Score"></td><td><input class="comment-input" type="text" placeholder="Comment" aria-label="Comment"></td><td><button class="btn btn-primary">Save</button></td></tr></tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="supervisor-dashboard.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+    <title>Submissions | Supervisor | FYP System</title>
+</head>
+<body>
+    <header>
+        <button class="menu-btn" aria-label="Open menu">&#9776;</button>
+        <div>
+            <div class="logo">F</div>
+            <p class="logo-desc">FYP System</p>
+        </div>
+        <div>
+            <div class="role">Supervisor</div>
+            <p class="username">Dr. Okafor</p>
+        </div>
+    </header>
+
+    <div class="layout">
+        <aside class="sidebar">
+            <nav>
+                <a href="supervisor-dashboard.html">Dashboard</a>
+                <a href="supervisor-students.html">My Students</a>
+                <a href="supervisor-topics.html">Topic Requests</a>
+                <a href="supervisor-submissions.html">Submissions</a>
+                <a href="supervisor-grading.html">Grading</a>
+                <a href="supervisor-profile.html">Profile</a>
+            </nav>
+            <a href="login.html" class="logout">Logout</a>
+        </aside>
+
+        <main>
+            <h1>Submissions</h1>
+            <section class="card">
+                <div class="table-wrap ">
+                    <table>
+                        <thead><tr><th>File</th><th>Student</th><th>Chapter</th><th>Submitted</th><th>Status</th><th></th></tr></thead>
+                        <tbody><tr><td>Chapter2_Draft.docx</td><td>Amina Yusuf</td><td>Chapter 2</td><td>17 Oct 2026</td><td><span class="badge pending">To review</span></td><td><button class="btn btn-approved">View</button></td></tr><tr><td>Lit_Review_v1.docx</td><td>David Eze</td><td>Chapter 2</td><td>15 Oct 2026</td><td><span class="badge pending">To review</span></td><td><button class="btn btn-approved">View</button></td></tr><tr><td>Chapter1_Final.pdf</td><td>Amina Yusuf</td><td>Chapter 1</td><td>10 Oct 2026</td><td><span class="badge approved">Reviewed</span></td><td><button class="btn btn-approved">View</button></td></tr><tr><td>Proposal.pdf</td><td>Chioma Obi</td><td>Proposal</td><td>8 Oct 2026</td><td><span class="badge rejected">Revise</span></td><td><button class="btn btn-approved">View</button></td></tr></tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

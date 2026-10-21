@@ -1,0 +1,113 @@
+/* 1. COLOR VARIABLES: change the theme here */
+:root {
+  --primary: #1b7a3a;
+  --primary-dark: #145c2b;
+  --accent: #b8891a;
+  --surface: #e8f5ec;
+  --background: #ffffff;
+  --border: #cfe3d5;
+  --text: #1c2b21;
+  --text-muted: #6b7a70;
+}
+
+/* 2. RESET */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* 3. PAGE: centers the form */
+body {
+  font-family: system-ui, sans-serif;
+  background: var(--background);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+}
+
+/* 4. THE FORM AS A CARD */
+form {
+  width: 100%;
+  max-width: 420px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-top: 4px solid var(--primary);
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow: 0 20px 40px rgba(20, 92, 43, 0.12);
+}
+
+h2 {
+  text-align: center;
+  color: var(--primary-dark);
+  margin-bottom: 20px;
+}
+
+/* 5. FIELDS */
+.field { margin-bottom: 16px; }
+.field br { display: none; }   /* CSS spacing replaces the <br> tags */
+
+label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--primary-dark);
+  margin-bottom: 6px;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px 14px;
+  font: inherit;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+input:focus, select:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 1px;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.remember input { 
+    width: auto; 
+    accent-color: var(--primary);
+}
+
+.remember label {
+  margin-bottom: 0;
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+/* 6. BUTTON */
+.signup_btn, .signin_btn {
+  width: 100%;
+  padding: 13px;
+  border: 0;
+  border-radius: 10px;
+  background: linear-gradient(var(--primary), var(--primary-dark));
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+.signup_btn:hover, .signin_btn:hover { filter: brightness(1.1); }
+
+/* 7. LINK TEXT */
+p { text-align: center; margin-top: 18px; font-size: 14px; color: var(--text-muted); }
+a { color: var(--accent); font-weight: 600; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+@media (max-width: 480px) {
+    form {
+        padding: 20px;
+    }
+}

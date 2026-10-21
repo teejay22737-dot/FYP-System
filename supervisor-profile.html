@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="supervisor-dashboard.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+    <title>Profile | Supervisor | FYP System</title>
+</head>
+<body>
+    <header>
+        <button class="menu-btn" aria-label="Open menu">&#9776;</button>
+        <div>
+            <div class="logo">F</div>
+            <p class="logo-desc">FYP System</p>
+        </div>
+        <div>
+            <div class="role">Supervisor</div>
+            <p class="username">Dr. Okafor</p>
+        </div>
+    </header>
+
+    <div class="layout">
+        <aside class="sidebar">
+            <nav>
+                <a href="supervisor-dashboard.html">Dashboard</a>
+                <a href="supervisor-students.html">My Students</a>
+                <a href="supervisor-topics.html">Topic Requests</a>
+                <a href="supervisor-submissions.html">Submissions</a>
+                <a href="supervisor-grading.html">Grading</a>
+                <a href="supervisor-profile.html">Profile</a>
+            </nav>
+            <a href="login.html" class="logout">Logout</a>
+        </aside>
+
+        <main>
+            <h1>Profile</h1>
+            <section class="card profile-card">
+                <h2>Personal information</h2>
+                <form class="profile-form">
+                    <div class="field">
+                        <label for="fullname">Full name</label>
+                        <input type="text" id="fullname" name="fullname" value="Dr. Okafor">
+                    </div>
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" value="okafor@funaab.edu.ng">
+                    </div>
+                    <div class="field">
+                        <label for="staff_no">Staff number</label>
+                        <input type="text" id="staff_no" name="staff_no" value="">
+                    </div>
+                    <div class="field">
+                        <label for="department">Department</label>
+                        <input type="text" id="department" name="department" value="Computer Science">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Save changes</button>
+                </form>
+            </section>
+
+            <section class="card profile-card">
+                <h2>Change password</h2>
+                <form class="profile-form">
+                    <div class="field">
+                        <label for="current_password">Current password</label>
+                        <input type="password" id="current_password" name="current_password" value="">
+                    </div>
+                    <div class="field">
+                        <label for="new_password">New password</label>
+                        <input type="password" id="new_password" name="new_password" value="">
+                    </div>
+                    <div class="field">
+                        <label for="confirm_password">Confirm new password</label>
+                        <input type="password" id="confirm_password" name="confirm_password" value="">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Update password</button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

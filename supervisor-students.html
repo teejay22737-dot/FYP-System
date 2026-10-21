@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="supervisor-dashboard.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+    <title>My Students | Supervisor | FYP System</title>
+</head>
+<body>
+    <header>
+        <button class="menu-btn" aria-label="Open menu">&#9776;</button>
+        <div>
+            <div class="logo">F</div>
+            <p class="logo-desc">FYP System</p>
+        </div>
+        <div>
+            <div class="role">Supervisor</div>
+            <p class="username">Dr. Okafor</p>
+        </div>
+    </header>
+
+    <div class="layout">
+        <aside class="sidebar">
+            <nav>
+                <a href="supervisor-dashboard.html">Dashboard</a>
+                <a href="supervisor-students.html">My Students</a>
+                <a href="supervisor-topics.html">Topic Requests</a>
+                <a href="supervisor-submissions.html">Submissions</a>
+                <a href="supervisor-grading.html">Grading</a>
+                <a href="supervisor-profile.html">Profile</a>
+            </nav>
+            <a href="login.html" class="logout">Logout</a>
+        </aside>
+
+        <main>
+            <h1>My Students</h1>
+            <section class="card">
+                <div class="table-wrap ">
+                    <table>
+                        <thead><tr><th>Student</th><th>Matric no.</th><th>Topic</th><th>Progress</th><th></th></tr></thead>
+                        <tbody><tr><td>Amina Yusuf</td><td>20243586</td><td>AI-Based Crop Disease Detector</td><td><div class="bar"><div class="bar-fill" style="width: 62%"></div></div><small>62%</small></td><td><button class="btn btn-approved">View</button></td></tr><tr><td>David Eze</td><td>20243102</td><td>Smart Campus Navigation</td><td><div class="bar"><div class="bar-fill" style="width: 40%"></div></div><small>40%</small></td><td><button class="btn btn-approved">View</button></td></tr><tr><td>Chioma Obi</td><td>20243377</td><td>Blockchain Voting System</td><td><div class="bar"><div class="bar-fill" style="width: 10%"></div></div><small>10%</small></td><td><button class="btn btn-approved">View</button></td></tr><tr><td>Tunde Ade</td><td>20242950</td><td>Hospital Queue Management</td><td><div class="bar"><div class="bar-fill" style="width: 100%"></div></div><small>100%</small></td><td><button class="btn btn-approved">View</button></td></tr></tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
